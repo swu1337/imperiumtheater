@@ -1,0 +1,12 @@
+@import url("vendors/normalize.css");
+@import url("partials/landing.css");
+@import url("partials/navigation.css");
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.content {
+    max-width: 1188px;
+    margin: 0 auto;
+}
