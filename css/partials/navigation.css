@@ -7,32 +7,63 @@ ul li {
     display: inline-block;
 }
 
-ul li a {
+nav ul li a {
+    position: relative;
     text-decoration: none;
     color: white;
+    font-size: 20px;
     padding: 20px;
-    font-size: 18px;
 }
 
-ul li a:hover {
-    text-decoration: underline;
+nav > ul > li> a:hover:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px;
+    width: 50%;
+    height: 3px;
+    background-color: var(--light-purple);
 }
 
-ul li a:last-of-type {
+nav > ul > li:last-child > a:after {
+    left: calc(50% + 10px);
+}
+
+nav > ul > li:last-child > a {
     padding-right: 0;
 }
 
-figure.logo {
-    padding: 0;
-    margin: 10px 0;
+li > a.focus {
+    background-color: white;
+    color: black;
+    padding: 20px 30px;
 }
 
-header > .content {
+li > .focus.inverse {
+    background-color: var(--light-purple);
+    color: white;
+}
+
+li > .focus.inverse:after {
+    background-color: white;
+}
+
+.logo {
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+.logo.inverse {
+    margin-top: 16px;
+}
+
+header > .wrapper {
     display: flex;
     justify-content: space-between;
 }
 
-header.stickyheader {
+.stickyheader {
     width: 100%;
     height: 125px;
     position: fixed;
@@ -41,27 +72,24 @@ header.stickyheader {
     z-index: 10;
 }
 
-header.inverse {
-    background-color: white;
+.stickyheader.inverse {
+    background-color: var(--dark-purple);
     color: white;
+    height: 100px;
 }
 
 header  nav {
-    margin-top: 35px;
+    margin-top: 36px;
 }
 
-li > a.focus {
-    background-color: white;
-    color: black;
-    padding-top: 10px;
-    padding-bottom: 10px;
+header nav.inverse {
+    margin-top: 23px;
 }
 
-li > .focus.inverse {
-    background-color: black;
-    color: white;
+svg#logo {
+    width: 125px;
 }
 
-nav ul li > a.inverse {
-    color: black;
+svg#logo.inverse {
+    width: 80px;
 }

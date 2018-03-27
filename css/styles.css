@@ -1,13 +1,40 @@
 @import url("vendors/normalize.css");
+@import url("partials/buttons.css");
 @import url("partials/landing.css");
 @import url("partials/navigation.css");
+
+:root {
+    --light-purple: #DE134C;
+    --dark-purple: #270617;
+}
 
 body {
     font-family: 'Roboto', sans-serif;
 }
 
-.content {
+.wrapper {
     max-width: 1188px;
     width: 100%;
     margin: 0 auto;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+}
+
+.colum-half {
+    flex-basis: 50%;
+    max-width: 50%;
+    background-color: #333;
+    overflow: hidden;
+    height: 500px;
+}
+
+.colum-third {
+    flex-basis: calc(100% / 3);
+    max-width: calc(100% / 3);
+    background-color: #333;
+    overflow: hidden;
+    height: 500px;
 }
