@@ -5,6 +5,32 @@
     text-align: center;
     outline: none;
     border: 0px;
+    text-decoration: none;
+}
+
+.button.light-purple {
+    background-color: var(--light-purple);
+    color: white;
+}
+
+.button.light-purple:hover {
+    background-color: var(--dark-purple);
+    color: white;
+}
+
+.button.dark-purple {
+    background-color: var(--dark-purple);
+    color: white;
+}
+
+.button.dark-purple:hover {
+    background-color: var(--light-purple);
+    color: white;
+}
+
+.button.inverse {
+    background-color: black;
+    color: white;
 }
 
 .ghostbutton {

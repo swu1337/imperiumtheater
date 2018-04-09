@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet" />
     <link href="css/styles.css" type="text/css" rel="stylesheet" />
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -182,6 +183,7 @@
                     <li><a href="">Galerij</a></li>
                     <li><a href="">Theater Huren</a></li>
                     <li><a href="">Inloggen</a></li>
+                    <li><a href=""><i class="fas fa-shopping-cart icon"></i></a></li>
                 </ul>
             </nav>
         </div>
@@ -193,11 +195,44 @@
         </div>
     </div>
     <div class="wrapper">
-        <main class="row">
-            <section class="colum-half"></section>
-            <section class="colum-half"></section>
+        <main class="row preview">
+            <section class="colum-half">
+                <figure><img src="img/shows/pintersomega.jpg" alt="pintersomega"></figure>
+            </section>
+            <section class="colum-half preview-info">
+                <h2 class="info-header">Pintera's Omerta</h2>
+                <h3 class="info-subheading">Huis van Theater</h3>
+                <article class="info-text">
+                    <p>In ‘Pinter’s Omerta’ spelen dreiging, beklemming en verwarring een grote rol. Maar, door het absurde van de situatie en de typisch ‘Pinteriaanse’ dialogen, is het ook een stuk met een dosis (zwarte) humor.</p>
+                    <a href="#" class="button dark-purple">Leer meer</a>
+                </article>
+            </section>
         </main>
         <footer>
+            <section class="row">
+                <section class="contact">
+                    <h3>Theater Imperium</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt fa-fw"></i>Oude Vest 33e</li>
+                        <li>2313XR Leiden</li>
+                        <li><i class="fas fa-phone fa-fw"></i>071 5141035</li>
+                        <li><i class="fas fa-envelope fa-fw"></i>info@imperium.nl</li>
+                    </ul>
+                </section>
+                <section class="social">
+                    <ul>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Route</a></li>
+                        <li><a href="#">Archief</a></li>
+                        <li><a href="#"><i class="fab fa-facebook-square fa-2x"></i></a><a href="#"><i class="fab fa-twitter-square fa-2x"></i></a></li>
+                    </ul>
+                </section>
+                <section class="nieuwsbrief">
+                    <h4>Nieuwsbrief</h4>
+                    <p>Schrijf u in voor onze nieuwsbrief voor tweewekelijkse theaterinspiratie.</p>
+                    <a class="button" href="#">Inschrijven</a>
+                </section>
+            </section>
         </footer>
     </div>
 </body>

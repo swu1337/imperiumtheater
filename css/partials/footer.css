@@ -1,0 +1,72 @@
+footer {
+    width: 100%;
+    background-color: var(--dark-purple);
+    font-size: 18px;
+    color: white;
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
+}
+
+footer  ul > li {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: var(--light-purple);
+}
+
+footer > .row {
+    justify-content: space-around;
+}
+
+footer  .nieuwsbrief > p {
+    margin: 0;
+}
+
+footer  .button {
+    display: block;
+    margin-top: 15px;
+}
+
+.fa-facebook-square {
+    padding-right: 5px;
+}
+
+.fa-facebook-square:hover {
+    color: #3b5998;
+}
+
+.fa-twitter-square:hover {
+    color: #1da1f2;
+}
+
+.contact ul{
+    padding: 0;
+    margin: 0;
+}
+.contact ul > li > i {
+    padding-right: 10px;
+}
+
+.contact > ul > li:nth-child(2) {
+    padding-left: 32px;
+}
+
+.contact h3 {
+    color: white;
+}
+
+.social {
+    margin-top: 66px;
+}
+
+.nieuwsbrief {
+    flex-basis: 25%;
+}

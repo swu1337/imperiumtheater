@@ -3,7 +3,7 @@ ul {
     color: white;
 }
 
-ul li {
+nav ul li {
     display: inline-block;
 }
 
@@ -92,4 +92,10 @@ svg#logo {
 
 svg#logo.inverse {
     width: 80px;
+}
+
+.icon::before {
+    padding: 20px;
+    background-color: white;
+    color: black;
 }
