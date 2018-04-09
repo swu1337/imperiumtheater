@@ -31,8 +31,9 @@ footer  .nieuwsbrief > p {
 }
 
 footer  .button {
-    display: block;
+    display: inline-block;
     margin-top: 15px;
+    flex-grow: 0;
 }
 
 .fa-facebook-square {

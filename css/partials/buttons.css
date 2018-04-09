@@ -8,6 +8,11 @@
     text-decoration: none;
 }
 
+.button:hover {
+    background-color: var(--light-purple);
+    color: white;
+}
+
 .button.light-purple {
     background-color: var(--light-purple);
     color: white;

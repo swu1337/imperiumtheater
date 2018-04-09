@@ -18,10 +18,19 @@
 }
 
 .info-text {
+    display: flex;
+    flex-direction: column;
     width: 85%;
     margin: 50px auto 0 auto;
 }
 
 .info-text > p {
     text-align: left;
+    line-height: 2em;
+}
+
+.info-text > a {
+    margin-top: 20px;
+    display: inline-block;
+    align-self: flex-end;
 }
