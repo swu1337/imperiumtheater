@@ -4,10 +4,12 @@
 @import url("partials/navigation.css");
 @import url("partials/footer.css");
 @import url("pages/home.css");
+@import url("pages/gallery.css");
 
 :root {
     --light-purple: #DE134C;
     --dark-purple: #270617;
+    --purple: #6320EE;
 }
 
 body {
@@ -28,18 +30,35 @@ figure {
 .row {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
 }
 
-.colum-half {
+.space-around {
+    justify-content: space-around;
+}
+
+.column-half {
     flex-basis: 50%;
     max-width: 50%;
     overflow: hidden;
-    height: 500px;
+    height: 400px;
 }
 
-.colum-third {
-    flex-basis: calc(100% / 3);
-    max-width: calc(100% / 3);
+.column-first {
+    order: -1;
+}
+
+.column-third {
+    flex-basis: calc(100% / 3 - 5%);
+    max-width: calc(100% / 3 - 5%);
     overflow: hidden;
     height: 500px;
+    text-align: center;
+    background-color: white;
+}
+
+.column-quarter {
+    flex-basis: 24%;
+    max-width: 24%;
+    overflow: hidden;
 }
