@@ -1,39 +1,43 @@
-footer {
+body .wrapper > footer {
     width: 100%;
     background-color: var(--dark-purple);
     font-size: 18px;
     color: white;
 }
 
-footer ul {
+body .wrapper > footer ul {
     margin: 0;
     padding: 0;
 }
 
-footer  ul > li {
+body .wrapper > footer  ul > li {
     margin-bottom: 10px;
 }
 
-footer a {
+body .wrapper > footer a {
     color: white;
 }
 
-footer a:hover {
+body .wrapper > footer a:hover {
     color: var(--light-purple);
 }
 
-footer > .row {
+body .wrapper > footer > .row {
     justify-content: space-around;
 }
 
-footer  .nieuwsbrief > p {
+body .wrapper > footer  .nieuwsbrief > p {
     margin: 0;
 }
 
-footer  .button {
+body .wrapper > footer  .button {
     display: inline-block;
     margin-top: 15px;
     flex-grow: 0;
+}
+
+body > .wrapper > footer a.button {
+    color: black;
 }
 
 .fa-facebook-square {

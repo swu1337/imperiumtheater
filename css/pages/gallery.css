@@ -17,8 +17,8 @@
 }
 
 .photo-holder {
-    height: 200px;
-    margin-bottom: 20px;
+    height: 220px;
+    margin-bottom: 16px;
 }
 
 .gallery-image {
@@ -26,8 +26,32 @@
     height: 100%;
     object-fit: cover;
     object-position: top;
+    transition: all 0.5s;
+}
+
+.gallery-image:hover {
+    transform: scale(1.2);
 }
 
 .gallery .content .row {
     justify-content: space-between;
+}
+
+.gallery .info-header {
+    text-align: left;
+}
+
+.exhibition {
+    overflow: hidden;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.exhibition > footer > p {
+    margin: 0;
+    padding: 0;
+}
+
+.showmore {
+    cursor: pointer;
 }
