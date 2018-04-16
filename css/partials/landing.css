@@ -8,8 +8,34 @@
     position: relative;
 }
 
-.title {
-    font-size: 48px;
+.landingpage > .wrapper > header > h2, .intro-title, .title {
+    margin: 0;
     color: white;
-    margin-top: 175px;
+}
+
+.landingpage > .wrapper > header > h2, .landingpage .title:after {
+    font-weight: normal;
+    font-size: 20px;
+    letter-spacing: 4px;
+}
+
+.intro-title {
+    margin-top: 200px;
+    letter-spacing: 5px;
+    font-size: 16px;
+}
+
+.title {
+    position: relative;
+    display: inline-block;
+    font-size: 48px;
+    letter-spacing: 2px;
+}
+
+.landingpage .title:after {
+    content: "van Toneelgroep Imperium";
+    position: absolute;
+    right: 0;
+    bottom: -18px;
+    color: white;
 }

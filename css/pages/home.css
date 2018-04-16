@@ -44,15 +44,13 @@ main.preview {
     align-self: flex-end;
 }
 
-.column-half > figure {
+.column-half > figure, .column-half > figure > img {
     height: 100%;
     width: 100%;
 }
 
 .column-half > figure > img {
     object-fit: cover;
-    width: 100%;
-    height: 100%;
 }
 
 .column-third > article > p {

@@ -56,7 +56,7 @@
     font-weight: bold;
 }
 
-.ghostbutton:hover, .ghostbutton:active {
-    color: black;
+.landingpage > .wrapper > footer > a.ghostbutton:hover, a.ghostbutton:active {
+    color: var(--purple);
     background-color: white;
 }
