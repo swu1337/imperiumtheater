@@ -40,6 +40,10 @@ figure {
     justify-content: space-around;
 }
 
+.space-between {
+    justify-content: space-between;
+}
+
 .column-half {
     flex-basis: 50%;
     max-width: 50%;
