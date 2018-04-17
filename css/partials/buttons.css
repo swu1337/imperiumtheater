@@ -1,3 +1,13 @@
+.a-point {
+    cursor: pointer;
+    color: var(--purple);
+}
+
+.a-point:hover {
+    text-decoration: underline;
+    color: var(--light-purple);
+}
+
 .button {
     background-color: white;
     color: black;
@@ -6,6 +16,7 @@
     outline: none;
     border: 0px;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .button:hover {
@@ -36,6 +47,15 @@
 .button.inverse {
     background-color: black;
     color: white;
+}
+
+.button.action {
+    background-color: var(--purple);
+    color: white;
+}
+
+.button.action:hover {
+    background-color: var(--light-purple);
 }
 
 .ghostbutton {

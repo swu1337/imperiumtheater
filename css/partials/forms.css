@@ -1,0 +1,15 @@
+input {
+    display: block;
+    outline: none;
+    margin: 7px 0 20px 0;
+    overflow: hidden;
+    width: calc(100% - 24px);
+    padding: 16px 12px;
+    font-style: italic;
+    border: 1px solid black;
+}
+
+label {
+    font-size: 22px;
+    display: block;
+}

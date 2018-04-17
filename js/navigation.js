@@ -1,7 +1,7 @@
 $(function() {
     if($('.landingpage').length) {
         $(window).on('scroll', function() {
-            var scrollTop = $(window).scrollTop();
+            let scrollTop = $(window).scrollTop();
             if(scrollTop > 0) {
                 $('.header-nav').addClass('inverse');
                 $('.logo').addClass('inverse');
