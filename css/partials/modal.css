@@ -10,6 +10,7 @@
 }
 
 .modal-bg > .modal {
+    display: none;
     width: 25%;
     margin: 10px auto 0 auto;
     background-color: white;
@@ -18,10 +19,14 @@
     z-index: 12;
 }
 
-.modal-bg > .modal.register-modal {
+.modal-bg > .modal.register-modal, .modal-bg > .modal.success-modal {
     display: none;
     width: 40%;
     margin: 10px auto 0 auto;
+}
+
+.modal-bg > .modal.success-modal {
+    display: none;
 }
 
 .modal > .close {
@@ -38,7 +43,7 @@
     color: var(--light-purple);
 }
 
-.modal > .login, .modal > .register {
+.modal > .login, .modal > .register, .modal > .success {
     width: 70%;
     margin: 50px auto 0 auto;
 }
@@ -60,6 +65,12 @@
     color: #777;
     text-align: center;
     margin-bottom: 60px;
+}
+
+.modal p.message {
+    color: black;
+    text-align: left;
+    margin-bottom: 30px;
 }
 
 .modal p a {
@@ -121,5 +132,29 @@
 
 .modal.register-modal button {
     margin-top: 35px;
+    margin-bottom: 50px;
+}
+
+.success p:nth-child(2) {
+    text-align: center;
+    color: #00E676;
+    margin-bottom: 20px;
+}
+
+.success span {
+    font-size: 18px;
+    display: block;
+    color: var(--purple);
+    margin-bottom: 50px;
+}
+
+.success .register-email {
+    display: inline;
+    margin: 0;
+}
+
+.success button, .success a {
+    width: auto;
+    font-size: 16px;
     margin-bottom: 50px;
 }
