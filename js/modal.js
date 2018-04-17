@@ -6,8 +6,10 @@ $(function() {
 
         if($('.inloggen').length) {
             $('.inloggen').on('click', function(e) {
+                registerModal.hide();
+                loginModal.show();
+                
                 if(!getStorage('active-user')) {
-                    loginModal.show();
                     modal.slideDown();
                 }
             });
@@ -16,7 +18,6 @@ $(function() {
         if($('.modal-bg').length) {
             $('.modal-bg').on('click', function(e) {
                 if($(e.target).hasClass('close') || $(e.target).hasClass('modal-bg')) {
-                    registerModal.hide();
                     modal.slideUp();
                 }
             });
