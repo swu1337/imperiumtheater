@@ -23,7 +23,10 @@
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-.button.light-purple, body > .wrapper > footer a.button:hover, .button.dark-purple:hover {
+.button.light-purple,
+body > .wrapper > footer a.button:hover,
+.button.dark-purple:hover,
+.button.action:hover {
     background-color: var(--light-purple);
     color: white;
 }
@@ -33,22 +36,14 @@
     color: white;
 }
 
-.button.purple:hover {
-    background-color: var(--light-purple);
-}
-
 .button.inverse {
     background-color: black;
     color: white;
 }
 
-.button.action, .button.purple {
+.button.action {
     background-color: var(--purple);
     color: white;
-}
-
-.button.action:hover {
-    background-color: var(--light-purple);
 }
 
 .ghostbutton {
