@@ -1,5 +1,5 @@
 let checkInput = (array) => {
-    return !array.includes(undefined);
+    return !array.includes('');
 }
 let emailExist = (email) => {
     let users = getStorage('users').users;

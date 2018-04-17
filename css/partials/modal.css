@@ -10,18 +10,26 @@
 }
 
 .modal-bg > .modal {
-    width: 25%;
-    margin: 10px auto 0 auto;
+    display: none;
+    width: 28%;
+    margin: 100px auto 0 auto;
     background-color: white;
     position: relative;
     overflow: hidden;
     z-index: 12;
 }
 
-.modal-bg > .modal.register-modal {
+.modal-bg > .modal.register-modal, .modal-bg > .modal.success-modal {
     display: none;
-    width: 40%;
-    margin: 10px auto 0 auto;
+    width: 50%;
+}
+
+.modal-bg > .modal.success-modal {
+    width: 35%;
+}
+
+.modal-bg > .modal.success-modal {
+    display: none;
 }
 
 .modal > .close {
@@ -38,13 +46,19 @@
     color: var(--light-purple);
 }
 
-.modal > .login, .modal > .register {
+.modal > .login,
+.modal > .register,
+.modal > .success {
     width: 70%;
-    margin: 50px auto 0 auto;
+    margin: 100px auto 0 auto;
+}
+
+.modal > .success {
+    width: 80%;
 }
 
 .modal > .register {
-    width: 80%;
+    width: 88%;
 }
 
 .modal h2 {
@@ -60,6 +74,12 @@
     color: #777;
     text-align: center;
     margin-bottom: 60px;
+}
+
+.modal p.message {
+    color: black;
+    text-align: left;
+    margin-bottom: 30px;
 }
 
 .modal p a {
@@ -121,5 +141,29 @@
 
 .modal.register-modal button {
     margin-top: 35px;
+    margin-bottom: 50px;
+}
+
+.success p:nth-child(2) {
+    text-align: center;
+    color: #00E676;
+    margin-bottom: 20px;
+}
+
+.success span {
+    font-size: 18px;
+    display: block;
+    color: var(--purple);
+    margin-bottom: 50px;
+}
+
+.success .register-email {
+    display: inline;
+    margin: 0;
+}
+
+.success button, .success a {
+    width: auto;
+    font-size: 16px;
     margin-bottom: 50px;
 }

@@ -19,28 +19,20 @@
     cursor: pointer;
 }
 
-.button:hover {
+.button.inverse:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.button.light-purple,
+body > .wrapper > footer a.button:hover,
+.button.dark-purple:hover,
+.button.action:hover {
     background-color: var(--light-purple);
     color: white;
 }
 
-.button.light-purple {
-    background-color: var(--light-purple);
-    color: white;
-}
-
-.button.light-purple:hover {
+.button.dark-purple, .button.light-purple:hover {
     background-color: var(--dark-purple);
-    color: white;
-}
-
-.button.dark-purple {
-    background-color: var(--dark-purple);
-    color: white;
-}
-
-.button.dark-purple:hover {
-    background-color: var(--light-purple);
     color: white;
 }
 
@@ -52,10 +44,6 @@
 .button.action {
     background-color: var(--purple);
     color: white;
-}
-
-.button.action:hover {
-    background-color: var(--light-purple);
 }
 
 .ghostbutton {

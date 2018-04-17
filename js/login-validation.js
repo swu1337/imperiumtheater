@@ -1,7 +1,7 @@
 $(function() {
         let checkLogin = (email, password) => {
             let users = getStorage('users').users;
-
+            
             // for(let user of users) {
             //     if(email == user.email && password == user.ww) {
             //         return user;
