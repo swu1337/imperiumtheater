@@ -11,7 +11,7 @@
 
 .modal-bg > .modal {
     width: 25%;
-    margin: 200px auto 0 auto;
+    margin: 10px auto 0 auto;
     background-color: white;
     position: relative;
     overflow: hidden;
@@ -21,7 +21,7 @@
 .modal-bg > .modal.register-modal {
     display: none;
     width: 40%;
-    margin: 130px auto 0 auto;
+    margin: 10px auto 0 auto;
 }
 
 .modal > .close {
