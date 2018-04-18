@@ -11,6 +11,7 @@
 @import url("pages/cart.css");
 @import url("pages/cart.css");
 @import url("pages/account.css");
+@import url("pages/checkout.css");
 
 :root {
     --light-purple: #DE134C;
@@ -45,6 +46,10 @@ figure {
 
 .space-between {
     justify-content: space-between;
+}
+
+.flex-end {
+    justify-content: flex-end;
 }
 
 .column-half {

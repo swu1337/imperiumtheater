@@ -1,0 +1,88 @@
+.checkout .overview {
+    font-size: 20px;
+}
+
+.checkout .overview span {
+    font-size: 18px;
+    display: inline-block;
+    padding: 0 5px;
+}
+
+.checkout .checkout-header {
+    padding-bottom: 15px;
+    border-bottom: 2px solid black;
+}
+
+.checkout .pre {
+    font-size: 14px;
+    margin: 0;
+    text-transform: uppercase;
+    padding: 2px 0;
+}
+
+.checkout h4 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.checkout .name-phone {
+    padding-right: 50px;
+    border-right: 2px solid black;
+}
+
+.checkout .email {
+    padding-left: 30px;
+}
+
+.checkout .name-phone h4:nth-child(2) {
+    margin-bottom: 20px;
+}
+
+.checkout .payinfo figure {
+    margin-right: 30px;
+    padding: 10px 0;
+}
+
+.checkout figure img {
+    width: 125px;
+    height: 65px;
+    object-fit: cover;
+}
+
+.checkout input[type="radio"] {
+    width: auto;
+    margin: 0px 30px;
+}
+
+.checkout .pay-info label {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.checkout .pay-info form > span {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.checkout .pay-method-info {
+    display: none;
+}
+
+.checkout .pay-info .error {
+    padding: 0;
+    color: var(--light-purple);
+    margin-bottom: 0 0 23px 0;
+    font-size: 16px;
+}
+
+.checkout aside .check-pay-method, .checkout .pay-pay  {
+    margin-bottom: 60px;
+}
+
+.checkout .amount-holder {
+    margin-top: 70px;
+    display: none;
+}

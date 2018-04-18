@@ -14,8 +14,13 @@
 }
 .account .account-detail {
     margin: 0;
-    padding: 4px 0 50px 0;
+    padding: 4px 0 25px 0;
     font-size: 28px;
+}
+
+.account .error {
+    color: var(--light-purple);
+    margin-bottom: 30px;
 }
 
 .account .member-account, .account .non-member-account {
