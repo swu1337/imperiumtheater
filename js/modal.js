@@ -17,10 +17,8 @@ $(function() {
                     modal.slideDown();
                 }
             });
-        } else{
-            console.log(222);
         }
-
+        
         modal.on('click', function(e) {
             if($(e.target).hasClass('close') || $(e.target).hasClass('modal-bg')) {
                 modal.slideUp();
