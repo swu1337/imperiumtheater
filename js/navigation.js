@@ -1,5 +1,7 @@
 $(function() {
+    //Check if the function is running on page with the landingpage
     if($('.landingpage').length) {
+        //It makes sure when the user scroll to change the navigation. Coded for the home page.
         $(window).on('scroll', function() {
             let scrollTop = $(window).scrollTop();
             if(scrollTop > 0) {
@@ -19,6 +21,7 @@ $(function() {
             }
         });
     } else {
+        //Setting up the menu for other pages
         $('.header-nav').addClass('inverse');
         $('.logo').addClass('inverse');
         $('li > a.focus').addClass('inverse');

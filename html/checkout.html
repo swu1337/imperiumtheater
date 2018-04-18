@@ -17,6 +17,7 @@
     <script src="../js/helper/data-checker.js"></script>
     <script src="../js/helper/image-square.js"></script>
     <script src="../js/account.js"></script>
+    <script src="../js/checkout.js"></script>
     <script src="../js/login-validation.js"></script>
     <script src="../js/modal.js"></script>
     <script src="../js/navigation.js"></script>
@@ -263,54 +264,92 @@
         </div>
     </header>
     <div class="wrapper">
-        <main class="account">
+        <main class="cart checkout">
             <section class="content">
-                <h2>Winkelmandje > Account</h2>
-                <section class="row space-between">
-                    <section class="member-account">
-                        <h3>Ik heb al een account</h3>
-                        <section>
-                            <h2 class="account-detail">Inloggen</h2>
-                                <p class="error"></p>
-                                <form action="" method="post">
-                                    <label for="email">E-mailadres:</label>
-                                    <input type="email" id="email" placeholder="example@example.com" />
-                                    <label for="password">Wachtwoord:</label>
-                                    <input type="password" id="password" placeholder="********" />
-                                    <span class="forgot">Wachtwoord vergeten?</span>
-                                    <button type="submit" class="button action">Verder met inloggen</button>
-                                </form>
+                <h2>Winkelmandje > Account > Checkout</h2>
+                <section class="cart-items">
+                    <section class="row ticket">
+                        <h3>Artikel</h3>
+                        <h3>Prijs per stuk</h3>
+                        <h3>Aantal</h3>
+                        <h3>Totaalbedrag</h3>
+                    </section>
+                    <section class="row ticket item">
+                        <header class="ticket-image">
+                            <figure><a href=""><img class="ticket-image-header" src="../img/shows/over-iedereen-header.jpg" alt="show" /></a></figure>
+                        </header>
+                        <article class="show-data">
+                            <a href="#">Over iedereen die er niet is</a>
+                            <p>Alex Peterhans</p>
+                            <p>Zo, 13 Feb 2018</p>
+                            <p><i class="fas fa-clock fa-fw"></i>13:00 - 14:00</p>
+                        </article>
+                        <section class="price">
+                            <p>&euro; 12,00</p>
+                        </section>
+                        <section class="input-amount">
+                            <input type="number" required class="amount" step="1" min="1" placeholder="1"/>
+                            <p><i class="fas fa-trash-alt"></i>Verwijder</p>
+                        </section>
+                        <section class="total">
+                            <p>&euro; 12,00</p>
                         </section>
                     </section>
-                    <section class="non-member-account">
-                        <header><h3>Ik heb nog geen account</h3></header>
-                        <section class="row space-between">
-                            <section>
-                                <section>
-                                    <h2 class="account-detail">Bestellen zonder account</h2>
-                                        <p class="error"></p>
-                                        <form action="" method="post">
-                                            <label for="email">E-mailadres:</label>
-                                            <input type="email" id="email" placeholder="example@example.com" />
-                                            <p>Bij het bestellen zonder account, vul je je e-mailadres en persoonlijk gegevens. Uw gegevens wordt gebruikt om kaartjes en factuur te kunnen maken.</p>
-                                            <button type="submit" class="button action">Verder zonder account</button>
-                                        </form>
-                                </section>
-                            </section>
-                            <section>
-                                <section>
-                                    <h2 class="account-detail">Een account maken</h2>
-                                        <p class="error"></p>
-                                        <form action="" method="post">
-                                            <label for="email">E-mailadres:</label>
-                                            <input type="email" id="email" placeholder="example@example.com" />
-                                            <p>Bij het maken van een account, maak je tijdens het betaalproces een Imperium account. Met dit account kun je volgende deze process overslaan en doorgaan naar afrekenen.</p>
-                                            <button type="submit" class="button action">Verder met nieuw account</button>
-                                        </form>
-                                </section>
-                            </section>
-                        </section>
+                </section>
+                <h2 class="overview">Voortgang: <span class="personal-info">1. Persoonlijke gegevens</span><i class="fas fa-chevron-right fa-fw"></i><span class="pay-method">2. Betaalwijze</span></h2>
+                <h2 class="checkout-header">1. Persoonlijke gegevens</h2>
+                <section class="row personal-info">
+                    <section class="name-phone">
+                        <p class="pre">Naam</p>
+                        <h4 class="name">Jane Doe</h4>
+                        <p class="pre">Telefoonnummer</p>
+                        <h4 class="phone">0612312123</h4>
                     </section>
+                    <section class="email">
+                        <p class="pre">E-mailadres</p>
+                        <h4 class="phone">Jane.Doe@example.com</h4>
+                    </section>
+                </section>
+                <aside class="row flex-end"><button class="button edit-personal dark-purple">Wijzig</button></aside>
+                <h2 class="checkout-header">2. Betaalwijze</h2>
+                <section class="pay-info">
+                    <p class="error"></p>
+                    <form class="" action="index.html" method="post">
+                        <span>Kies een betaalwijze</span>
+                        <label for="ideal">
+                            <input type="radio" name="pay-method" id="ideal" value="iDeal" />
+                            <figure><img src="../img/paymethods/ideal.jpg" alt="ideal"></figure>
+                            <span>iDeal</span>
+                        </label>
+                        <label for="paypal">
+                            <input type="radio" name="pay-method" id="paypal" value="PayPal" />
+                            <figure><img src="../img/paymethods/paypal.png" alt="paypal" /></figure>
+                            <span >PayPal</span>
+                        </label>
+                        <label for="maestro">
+                            <input type="radio" name="pay-method" id="maestro" value="Maestro" />
+                            <figure><img src="../img/paymethods/maestro.jpg" alt="maestro" /></figure>
+                            <span>Maestro</span>
+                        </label>
+                    </form>
+                    <section class="pay-method-info">
+                        <p class="pre">Betaalwijze</p>
+                        <h4 class="pay-method"></h4>
+                    </section>
+                </section>
+                <aside class="row flex-end"><button class="button check-pay-method dark-purple">Verder naar overzicht</button></aside>
+                <section class="row amount-holder">
+                    <section class="index">
+                        <p class="sub-totaal">Subtotaal</p>
+                        <p class="btw">Inclusief 21 wettelijk btw</p>
+                        <p class="totaal-price">Totaalbedrag</p>
+                    </section>
+                    <section class="value">
+                        <p class="sub-totaal">&euro;12,00</p>
+                        <p class="btw">&euro; 4,16</p>
+                        <p class="totaal-price">&euro;12,00</p>
+                    </section>
+                    <aside class="row flex-end"><button class="button pay-pay action">Afrekenen</button></aside>
                 </section>
             </section>
         </main>
