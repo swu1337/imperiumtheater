@@ -3,7 +3,8 @@ $(function() {
         selector.height(selector.width());
     }
 
-    if($('.programma-and-tickets').length) {
-        imageSquareResizer($('.ticket > figure > img'));
+    if($('.programma-and-tickets').length || $('.cart').length) {
+        imageSquareResizer($('.ticket > figure img'));
+        imageSquareResizer($('.ticket > header > figure img'));
     }
 });

@@ -188,93 +188,70 @@
             </a>
             <nav>
                 <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a class="focus" href="programma-and-tickets.html">Programma's & Tickets</a></li>
+                    <li><a class="focus" href="../index.html">Home</a></li>
+                    <li><a href="programma-and-tickets.html">Programma's & Tickets</a></li>
                     <li><a href="#">Over Ons</a></li>
                     <li><a href="gallery.html">Galerij</a></li>
                     <li><a href="#">Theater Huren</a></li>
                     <li><a href="#">Inloggen</a></li>
-                    <li><a href="#"><i class="fas fa-shopping-cart icon"></i></a></li>
+                    <li><a href="html/cart.html"><i class="fas fa-shopping-cart icon"></i></a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <div class="wrapper">
-        <main class="programma-and-tickets">
-            <section class="row header-bg">
-                <h1 class="title">Programma &amp; Tickets</h1>
-            </section>
+        <main class="cart">
             <section class="content">
-                <section class="row ticket">
-                    <header class="date">
-                        <h2>Zo</h2>
-                        <h3>13 FEB</h3>
-                    </header>
-                    <figure><a href=""><img src="../img/shows/over-iedereen-header.jpg" alt="show" /></a></figure>
-                    <article class="show-data">
-                        <a href="#">Over iedereen die er niet is</a>
-                        <p>Alex Peterhans</p>
-                        <p><i class="fas fa-clock fa-fw"></i>13:00 - 14:00</p>
-                        <p>Beschikbaar:<span class="seats">211</span></p>
-                    </article>
-                    <footer><a href="#" class="button light-purple buy-ticket">Koop Tickets</a></footer>
-                </section>
-                <section class="row ticket">
-                    <header class="date">
-                        <h2>Ma</h2>
-                        <h3>14 FEB</h3>
-                    </header>
-                    <figure><a href=""><img src="../img/shows/over-iedereen-header.jpg" alt="show" /></a></figure>
-                    <article class="show-data">
-                        <a href="#">Over iedereen die er niet is</a>
-                        <p>Alex Peterhans</p>
-                        <p><i class="fas fa-clock fa-fw"></i>13:00 - 14:00</p>
-                        <p>Beschikbaar:<span class="seats">23</span></p>
-                    </article>
-                    <footer><a href="#" class="button light-purple buy-ticket">Koop Tickets</a></footer>
-                </section>
-                <section class="row ticket">
-                    <header class="date">
-                        <h2>Di</h2>
-                        <h3>15 FEB</h3>
-                    </header>
-                    <figure><a href=""><img src="../img/shows/thestateofmary.jpg" alt="show" /></a></figure>
-                    <article class="show-data">
-                        <a href="#">The State of Mary</a>
-                        <p>Het Homerostheater</p>
-                        <p><i class="fas fa-clock fa-fw"></i>13:00 - 14:10</p>
-                        <p>Beschikbaar:<span class="seats">14</span></p>
-                    </article>
-                    <footer><a href="#" class="button light-purple buy-ticket">Koop Tickets</a></footer>
+                <h2>Winkelmandje</h2>
+                <section class="cart-items">
+                    <section class="row ticket">
+                        <h3>Artikel</h3>
+                        <h3>Prijs per stuk</h3>
+                        <h3>Aantal</h3>
+                        <h3>Totaalbedrag</h3>
+                    </section>
+                    <section class="row ticket item">
+                        <header class="ticket-image">
+                            <figure><a href=""><img class="ticket-image-header" src="../img/shows/over-iedereen-header.jpg" alt="show" /></a></figure>
+                        </header>
+                        <article class="show-data">
+                            <a href="#">Over iedereen die er niet is</a>
+                            <p>Alex Peterhans</p>
+                            <p>Zo, 13 Feb 2018</p>
+                            <p><i class="fas fa-clock fa-fw"></i>13:00 - 14:00</p>
+                        </article>
+                        <section class="price">
+                            <p>&euro; 12,00</p>
+                        </section>
+                        <section class="input-amount">
+                            <input type="number" required class="amount" step="1" min="1" placeholder="1"/>
+                            <p><i class="fas fa-trash-alt"></i>Verwijder</p>
+                        </section>
+                        <section class="total">
+                            <p>&euro; 12,00</p>
+                        </section>
+                    </section>
+                    <section class="row ticket item no-border ">
+                        <section class="row amount-holder">
+                            <section class="index">
+                                <p class="sub-totaal">Subtotaal</p>
+                                <p class="btw">Inclusief 21 wettelijk btw</p>
+                                <p class="totaal-price">Totaalbedrag</p>
+                            </section>
+                            <section class="value">
+                                <p class="sub-totaal">&euro;12,00</p>
+                                <p class="btw">&euro; 4,16</p>
+                                <p class="totaal-price">&euro;12,00</p>
+                            </section>
+                        </section>
+                    </section>
+                    <section class="row space-between">
+                        <a href="../index.html" class="button inverse">Terug naar Home</a>
+                        <button type="button" class="button light-purple">Verder naar betalen</button>
+                    </section>
                 </section>
             </section>
         </main>
-        <footer>
-            <section class="row">
-                <section class="contact">
-                    <h3>Theater Imperium</h3>
-                    <ul>
-                        <li><i class="fas fa-map-marker-alt fa-fw"></i>Oude Vest 33e</li>
-                        <li>2313XR Leiden</li>
-                        <li><i class="fas fa-phone fa-fw"></i>071 5141035</li>
-                        <li><i class="fas fa-envelope fa-fw"></i>info@imperium.nl</li>
-                    </ul>
-                </section>
-                <section class="social">
-                    <ul>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Route</a></li>
-                        <li><a href="#">Archief</a></li>
-                        <li><a href="#"><i class="fab fa-facebook-square fa-2x"></i></a><a href="#"><i class="fab fa-twitter-square fa-2x"></i></a></li>
-                    </ul>
-                </section>
-                <section class="nieuwsbrief">
-                    <h4>Nieuwsbrief</h4>
-                    <p>Schrijf u in voor onze nieuwsbrief voor tweewekelijkse theaterinspiratie.</p>
-                    <a class="button" href="#">Inschrijven</a>
-                </section>
-            </section>
-        </footer>
     </div>
 </body>
 </html>

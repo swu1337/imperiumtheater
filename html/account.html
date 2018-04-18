@@ -188,93 +188,66 @@
             </a>
             <nav>
                 <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a class="focus" href="programma-and-tickets.html">Programma's & Tickets</a></li>
+                    <li><a class="focus" href="../index.html">Home</a></li>
+                    <li><a href="programma-and-tickets.html">Programma's & Tickets</a></li>
                     <li><a href="#">Over Ons</a></li>
                     <li><a href="gallery.html">Galerij</a></li>
                     <li><a href="#">Theater Huren</a></li>
                     <li><a href="#">Inloggen</a></li>
-                    <li><a href="#"><i class="fas fa-shopping-cart icon"></i></a></li>
+                    <li><a href="html/cart.html"><i class="fas fa-shopping-cart icon"></i></a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <div class="wrapper">
-        <main class="programma-and-tickets">
-            <section class="row header-bg">
-                <h1 class="title">Programma &amp; Tickets</h1>
-            </section>
+        <main class="account">
             <section class="content">
-                <section class="row ticket">
-                    <header class="date">
-                        <h2>Zo</h2>
-                        <h3>13 FEB</h3>
-                    </header>
-                    <figure><a href=""><img src="../img/shows/over-iedereen-header.jpg" alt="show" /></a></figure>
-                    <article class="show-data">
-                        <a href="#">Over iedereen die er niet is</a>
-                        <p>Alex Peterhans</p>
-                        <p><i class="fas fa-clock fa-fw"></i>13:00 - 14:00</p>
-                        <p>Beschikbaar:<span class="seats">211</span></p>
-                    </article>
-                    <footer><a href="#" class="button light-purple buy-ticket">Koop Tickets</a></footer>
-                </section>
-                <section class="row ticket">
-                    <header class="date">
-                        <h2>Ma</h2>
-                        <h3>14 FEB</h3>
-                    </header>
-                    <figure><a href=""><img src="../img/shows/over-iedereen-header.jpg" alt="show" /></a></figure>
-                    <article class="show-data">
-                        <a href="#">Over iedereen die er niet is</a>
-                        <p>Alex Peterhans</p>
-                        <p><i class="fas fa-clock fa-fw"></i>13:00 - 14:00</p>
-                        <p>Beschikbaar:<span class="seats">23</span></p>
-                    </article>
-                    <footer><a href="#" class="button light-purple buy-ticket">Koop Tickets</a></footer>
-                </section>
-                <section class="row ticket">
-                    <header class="date">
-                        <h2>Di</h2>
-                        <h3>15 FEB</h3>
-                    </header>
-                    <figure><a href=""><img src="../img/shows/thestateofmary.jpg" alt="show" /></a></figure>
-                    <article class="show-data">
-                        <a href="#">The State of Mary</a>
-                        <p>Het Homerostheater</p>
-                        <p><i class="fas fa-clock fa-fw"></i>13:00 - 14:10</p>
-                        <p>Beschikbaar:<span class="seats">14</span></p>
-                    </article>
-                    <footer><a href="#" class="button light-purple buy-ticket">Koop Tickets</a></footer>
+                <h2>Winkelmandje > Account</h2>
+                <section class="row space-between">
+                    <section class="member-account">
+                        <h3>Ik heb al een account</h3>
+                        <section>
+                            <h2 class="account-detail">Inloggen</h2>
+                                <form action="" method="post">
+                                    <label for="email">E-mailadres:</label>
+                                    <input type="email" id="email" placeholder="example@example.com" />
+                                    <label for="password">Wachtwoord:</label>
+                                    <input type="password" id="password" placeholder="********" />
+                                    <span class="forgot">Wachtwoord vergeten?</span>
+                                    <button type="submit" class="button action">Inloggen</button>
+                                </form>
+                        </section>
+                    </section>
+                    <section class="non-member-account">
+                        <header><h3>Ik heb nog geen account</h3></header>
+                        <section class="row space-between">
+                            <section>
+                                <section>
+                                    <h2 class="account-detail">Bestellen zonder account</h2>
+                                        <form action="" method="post">
+                                            <label for="email">E-mailadres:</label>
+                                            <input type="email" id="email" placeholder="example@example.com" />
+                                            <p>Bij het bestellen zonder account, vul je je e-mailadres en persoonlijk gegevens. Uw gegevens wordt gebruikt om kaartjes en factuur te kunnen maken.</p>
+                                            <button type="submit" class="button action">Inloggen</button>
+                                        </form>
+                                </section>
+                            </section>
+                            <section>
+                                <section>
+                                    <h2 class="account-detail">Een account maken</h2>
+                                        <form action="" method="post">
+                                            <label for="email">E-mailadres:</label>
+                                            <input type="email" id="email" placeholder="example@example.com" />
+                                            <p>Bij het maken van een account, maak je tijdens het betaalproces een Imperium account. Met dit account kun je volgende deze process overslaan en doorgaan naar afrekenen.</p>
+                                            <button type="submit" class="button action">Inloggen</button>
+                                        </form>
+                                </section>
+                            </section>
+                        </section>
+                    </section>
                 </section>
             </section>
         </main>
-        <footer>
-            <section class="row">
-                <section class="contact">
-                    <h3>Theater Imperium</h3>
-                    <ul>
-                        <li><i class="fas fa-map-marker-alt fa-fw"></i>Oude Vest 33e</li>
-                        <li>2313XR Leiden</li>
-                        <li><i class="fas fa-phone fa-fw"></i>071 5141035</li>
-                        <li><i class="fas fa-envelope fa-fw"></i>info@imperium.nl</li>
-                    </ul>
-                </section>
-                <section class="social">
-                    <ul>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Route</a></li>
-                        <li><a href="#">Archief</a></li>
-                        <li><a href="#"><i class="fab fa-facebook-square fa-2x"></i></a><a href="#"><i class="fab fa-twitter-square fa-2x"></i></a></li>
-                    </ul>
-                </section>
-                <section class="nieuwsbrief">
-                    <h4>Nieuwsbrief</h4>
-                    <p>Schrijf u in voor onze nieuwsbrief voor tweewekelijkse theaterinspiratie.</p>
-                    <a class="button" href="#">Inschrijven</a>
-                </section>
-            </section>
-        </footer>
     </div>
 </body>
 </html>
