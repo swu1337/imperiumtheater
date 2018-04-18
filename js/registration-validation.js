@@ -14,7 +14,7 @@ $(function() {
                             $('.register-modal').slideUp();
                             $('.success-modal').slideDown();
                             $('.success .register-email').text($('#remail').val());
-                            [$('#vn'), $('#an'), $('#remail'), $('#tn'), $('#rpassword'), $('#hrpassword')].forEach((e) => {
+                            [$('#vn'), $('#tv'), $('#an'), $('#remail'), $('#tn'), $('#rpassword'), $('#hrpassword')].forEach((e) => {
                                 $(e).val('');
                             });
                         } else {
