@@ -18,7 +18,7 @@ $(function() {
                 }
             });
         }
-
+        
         modal.on('click', function(e) {
             if($(e.target).hasClass('close') || $(e.target).hasClass('modal-bg')) {
                 modal.slideUp();

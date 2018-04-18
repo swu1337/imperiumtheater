@@ -9,11 +9,80 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet" />
     <link href="../css/styles.css" type="text/css" rel="stylesheet" />
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="../js/helper/localstorage.js"></script>
+    <script src="../js/config/users.js"></script>
+    <script src="../js/config/login-status.js"></script>
+    <script src="../js/helper/data-checker.js"></script>
     <script src="../js/navigation.js"></script>
     <script src="../js/show-more.js"></script>
+    <script src="../js/modal.js"></script>
+    <script src="../js/login-validation.js"></script>
+    <script src="../js/registration-validation.js"></script>
     <title>Galerij - Theater Imperium</title>
 </head>
 <body>
+    <aside class="modal-bg">
+        <section class="modal login-modal">
+            <span class="close">&times;</span>
+            <section class="login">
+                <h2>Inloggen</h2>
+                <p class="error"></p>
+                <form action="" method="post">
+                    <label for="email">E-mailadres:</label>
+                    <input type="email" id="email" placeholder="example@example.com" />
+                    <label for="password">Wachtwoord:</label>
+                    <input type="password" id="password" placeholder="********" />
+                    <span class="forgot">Wachtwoord vergeten?</span>
+                    <button type="submit" class="button action">Inloggen</button>
+                </form>
+                <p>Nog geen account? <a href="" class="registeren">Maak een account aan</a></p>
+            </section>
+        </section>
+        <section class="modal register-modal">
+            <span class="close">&times;</span>
+            <section class="register">
+                <span class="a-point"><i class="fas fa-chevron-left fa-fw"></i> Terug naar login</span><h2>Maak een account aan</h2>
+                <p class="error"></p>
+                <form action="#" method="post">
+                    <section class="row space-between">
+                        <section class="column-half form-group">
+                            <label for="vn">Voornaam:</label>
+                            <input type="text"  id="vn" placeholder="John" />
+                            <label for="tv">Tussenvoegsel:</label>
+                            <input type="text" id="tv" placeholder="van" />
+                            <label for="an">Achternaam:</label>
+                            <input type="text"  id="an" placeholder="Doe" />
+                            <label for="remail">E-mailadres:</label>
+                            <input type="text"  id="remail" placeholder="example@example.com" />
+                        </section>
+                        <section class="column-half form-group">
+                            <label for="tn">Telefoonnnnumer:</label>
+                            <input type="text"  id="tn" placeholder="0612312123" />
+                            <label for="rpassword">Wachtwoord:</label>
+                            <input type="password"  id="rpassword" placeholder="********" />
+                            <label for="hrpassword">Herhaal wachtwoord:</label>
+                            <input type="password"  id="hrpassword" placeholder="********" />
+                            <label for="newsletter">Nieuwsbrief</label>
+                            <input type="checkbox" checked id="newsletter" />Ja, Ik wil graag aanmelden voor wekelijks nieuwsbrief van theater Imperium.
+                            <button type="submit" class="button action">Maak een account</button>
+                        </section>
+                    </section>
+                </form>
+            </section>
+        </section>
+        <section class="modal success-modal">
+            <span class="close">&times;</span>
+            <section class="success">
+                <h2>Account gemaakt!</h2>
+                <p><i class="far fa-check-circle fa-6x"></i></p>
+                <p class="message">Bedankt voor het maken van een Imperium account. Check op <span class="register-email"></span> voor bevestiging. Met een Imperium kun je op een makelijk manier kaartjes bestellen. Je kunt inloggen met de onderstaande link.</p>
+                <section class="row space-between">
+                    <a href="#" class="home button inverse">Sluiten</a>
+                    <button class="login button action">Inloggen</button>
+                </section>
+            </section>
+        </section>
+    </aside>
     <header class="header-nav">
         <div class="wrapper">
             <a href="../index.html">
@@ -184,7 +253,7 @@
                     <li><a href="#">Over Ons</a></li>
                     <li><a href="gallery.html">Galerij</a></li>
                     <li><a href="#">Theater Huren</a></li>
-                    <li><a href="#">Inloggen</a></li>
+                    <li><a href="#" class="inloggen">Inloggen</a></li>
                     <li><a href="#"><i class="fas fa-shopping-cart icon"></i></a></li>
                 </ul>
             </nav>

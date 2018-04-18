@@ -1,0 +1,134 @@
+.cart h2 {
+    font-size: 28px;
+}
+
+.cart h3 {
+    font-size: 22px;
+}
+
+.cart .cart-items .item {
+    border: 1px solid;
+    border-top: 0;
+}
+
+.cart .cart-items .item.no-border {
+    border: none;
+}
+
+.cart .ticket-image {
+    flex-basis: 13%;
+    max-width: 13%;
+    overflow: hidden;
+}
+
+.cart .ticket figure {
+    width: 100%;
+}
+
+.cart .show-data {
+    margin-left: 40px;
+    flex-grow: 1;
+}
+
+.cart .show-data a {
+    display: block;
+    text-decoration: none;
+    font-size: 24px;
+    color: black;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+.cart .show-data p {
+    font-size: 20px;
+    padding: 7px 0;
+    margin: 0;
+}
+
+.cart .show-data p:last-child {
+    margin: 0;
+}
+
+.cart .price, .cart .total {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart .input-amount {
+    flex-direction: column;
+}
+
+.cart p {
+    font-size: 20px;
+}
+
+.cart .ticket h3 {
+    text-align: center;
+    margin: 0;
+    font-size: 18px;
+    padding: 5px 0;
+}
+
+.cart .ticket h3:nth-child(1) {
+    text-align: left;
+    flex-grow: 1;
+}
+
+.cart .input-amount,
+.cart .price,
+.cart .ticket h3:nth-child(2),
+.cart .ticket h3:nth-child(3) {
+    flex-basis: 10%;
+    max-width: 10%;
+}
+
+.cart .total,
+.cart .ticket h3:nth-child(4),
+.amount-holder .value {
+    flex-basis: 14%;
+    max-width: 14%;
+}
+
+.cart .input-amount input {
+    margin: 52px auto 8px auto;
+    width: 40%;
+}
+
+.cart .input-amount p {
+    text-align: center;
+    cursor: pointer;
+    margin: 0 auto;
+    font-size: 14px;
+}
+
+.cart .input-amount p > i {
+    padding-right: 4px;
+}
+
+.cart .ticket:first-of-type {
+    border: 1px solid black;
+    align-items: center;
+}
+
+.cart .button {
+    margin-top: 20px;
+}
+
+.amount-holder {
+    justify-content: flex-end;
+}
+
+.amount-holder .index {
+    flex-basis: 20%;
+    max-width: 20%;
+}
+
+.amount-holder .value {
+    text-align: right;
+}
+
+.amount-holder .totaal-price {
+    font-size: 24px;
+    font-weight: bold;
+}

@@ -1,0 +1,60 @@
+.account h3 {
+    font-size: 22px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid var(--purple);
+}
+
+.account input {
+    margin-bottom: 45px;
+}
+
+.account form p {
+    margin: 0;
+    padding-top: 29px;
+}
+.account .account-detail {
+    margin: 0;
+    padding: 4px 0 50px 0;
+    font-size: 28px;
+}
+
+.account .member-account, .account .non-member-account {
+    flex-basis: 31%;
+    max-width: 31%;
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+.account .non-member-account {
+    flex-basis: 62%;
+    max-width: 62%;
+    overflow: hidden;
+}
+
+.account .non-member-account > section > section {
+    flex-basis: 45%;
+    max-width: 45%;
+    overflow: hidden;
+}
+
+.account .non-member-account > section > section:nth-child(1) {
+    padding-right: calc(5% - 1px);
+    border-right: 2px solid var(--purple);
+}
+.account #password {
+    margin-bottom: 2px;
+}
+
+.account .forgot {
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.account .forgot:hover {
+    text-decoration: underline;
+    color: var(--purple);
+}
+
+.account button {
+    margin-top: 40px;
+}
